@@ -1,10 +1,10 @@
 import './App.css';
-import Layout from './components/Layout';
-import Main from './components/Main';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 
 function App() {
   return (
-    <Layout children={<Main />} />
+    <RouterProvider router={router} />
   );
 }
 
